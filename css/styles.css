@@ -20,5 +20,88 @@ ul {
 }
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.backCard{
+  height: 157px;
+  width: 286px;
+  background-size: contain;
+  background-image:url(../assets/images/images/bg-card-back.png);
+}
+
+  .numberCvc{
+  
+  font-size: 9px;
+  color: #FFFFFF;
+  
+}
+
+.frontCard{
+  
+  display: flex;
+  justify-content: center;
+  height: 157px;
+  width: 286px;
+  
+  border-radius: 6px;
+  background-image: url(../assets/images/images/bg-card-front.png);
+}
+.nameAge{
+ 
+  
+  display: flex;
+  width: 245px;
+  justify-content: space-between;
+}
+.pan{
+
+  font-size: 18px;
+  color: white;
+  letter-spacing: 2.2px;
+  
+  top:83px;
+}
+.nameTitular{
+  color: white;
+  font-size: 9px;
+  letter-spacing: 1.29px;
+}
+.ageCaducity{
+  color: white;
+  font-size: 9px;
+  letter-spacing: 1.29px;
+}
+.cardname{
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  padding: 24px;
+  
+}
+.name{
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #21092F;
+  margin-bottom: 6px;
+}
+.input{
+  width: 327px;
+  height: 45px;
+  font-size: 18px;
+ color: #DFDEE0;
+ border:solid #DFDEE0 1px;
+ border-radius: 8px;
 }
