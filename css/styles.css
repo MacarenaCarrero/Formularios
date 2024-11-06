@@ -23,49 +23,61 @@ body {
   font-family: "Space Grotesk", sans-serif;
 }
 
-
 .container{
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  width: 375px;
+  height: 240px;
+background-image: url(../assets/images/images/bg-main-mobile.png);
+background-size: contain;
+background-repeat: no-repeat;
 }
 .backCard{
+  top: 24px;
+  left: 73px;
+  position: absolute;
   height: 157px;
   width: 286px;
   background-size: contain;
   background-image:url(../assets/images/images/bg-card-back.png);
 }
-
-  .numberCvc{
-  
+ .numberCvc{
+  position:absolute;
+  right: 41px;
+  top:60px;
   font-size: 9px;
-  color: #FFFFFF;
-  
+  color: #FFFFFF; 
 }
-
 .frontCard{
-  
+  position: absolute;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
   height: 157px;
   width: 286px;
-  
+  right:73px ;
+  top:110px;
   border-radius: 6px;
   background-image: url(../assets/images/images/bg-card-front.png);
 }
 .nameAge{
- 
-  
-  display: flex;
+ display: flex;
   width: 245px;
+  margin-bottom: 19.6px;
   justify-content: space-between;
 }
 .pan{
-
   font-size: 18px;
   color: white;
   letter-spacing: 2.2px;
-  
   top:83px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+padding: 24px;
+  margin-top: 48px;
 }
 .nameTitular{
   color: white;
@@ -83,14 +95,6 @@ body {
   flex-direction: column;
   
 }
-.form{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-
-  padding: 24px;
-  
-}
 .name{
   font-size: 12px;
   letter-spacing: 2px;
@@ -104,4 +108,38 @@ body {
  color: #DFDEE0;
  border:solid #DFDEE0 1px;
  border-radius: 8px;
+}
+.cardNumber{
+  display: flex;
+  flex-direction: column;
+}
+.cardCaducidad{
+  display: flex;
+  flex-direction: column;
+}
+.inputLitle{
+  width: 72px;
+  height: 45px;
+  font-size: 18px;
+ color: #DFDEE0;
+ border:solid #DFDEE0 1px;
+ border-radius: 8px;
+}
+.inputsAge{
+  display: flex;
+}
+.ageCvc{
+  display: flex;
+}
+.inputLitle2{
+  width: 164px;
+  height: 45px;
+  font-size: 18px;
+ color: #DFDEE0;
+ border:solid #DFDEE0 1px;
+ border-radius: 8px;
+}
+.cvcInput{
+  display: flex;
+  flex-direction: column;
 }

@@ -1,35 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
-</head>
-<body>
-   <div class="container">    
-<div class="backCard">
- <p class="numberCvc"> 000</p>
-</div>
-<div class="frontCard">
-    <p class="pan">0000 0000 0000 0000</p>
-    <div class="nameAge">
-    <p class="nameTitular">JANE APPLESEED</p> 
-    <p class="ageCaducity">00/00</p>
-</div>
-</div>
-<div class="form">
-    <div class="cardname ">
-        <label class="name" for="name">CARDHOLDER NAME</label>
-<input class="input" type="text" id="name" value="  e.g. Jane Appleseed">
+  </head>
+  <body>
+    <div class="container">
+      <div class="backCard">
+        <p class="numberCvc">000</p>
+      </div>
+      <div class="frontCard">
+        <p class="pan">0000 0000 0000 0000</p>
+        <div class="nameAge">
+          <p class="nameTitular">JANE APPLESEED</p>
+          <p class="ageCaducity">00/00</p>
+        </div>
+      </div>
     </div>
-    
-</div>
-
-</div>
+    <div class="form">
+      <div class="cardname">
+        <label class="name" for="name">CARDHOLDER NAME</label>
+        <input
+          class="input"
+          type="text"
+          id="name"
+          value="e.g. Jane Appleseed"
+        />
+      </div>
+      <div class="cardNumber">
+        <label class="name" for="number">CARD NUMBER</label>
+        <input
+          class="input"
+          type="number"
+          id="number"
+          placeholder="  e.g. 1234 5678 9123 0000"
+        />
+      </div>
+      <div class="ageCvc">
+        <div class="cardCaducidad">
+          <label class="name" for="fecha fecha2">EXP. DATE (MM/YY)</label>
+          <div class="inputsAge">
+            <input
+              class="inputLitle"
+              type="number"
+              id="fecha"
+              placeholder="MM"
+            />
+            <input
+              class="inputLitle"
+              type="number"
+              id="fecha2"
+              placeholder="YY"
+            />
+          </div>
+        </div>
+        <div class="cvcInput">
+          <label class="name" for="cvc2">CVC</label>
+          <input class="inputLitle2" type="number" placeholder="e.g. 123" />
+        </div>
+      </div>
+      <div class="buttonConfirm">
+        <input type="submit" value="Confirm" />
+      </div>
+    </div>
     <script src="./js/scripst.js"></script>
-</body>
+  </body>
 </html>
