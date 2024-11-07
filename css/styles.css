@@ -28,7 +28,7 @@ body {
   width: 375px;
   height: 240px;
 background-image: url(../assets/images/images/bg-main-mobile.png);
-background-size: contain;
+background-size: cover;
 background-repeat: no-repeat;
 }
 .backCard{
@@ -90,10 +90,9 @@ padding: 24px;
   letter-spacing: 1.29px;
 }
 .cardname{
-  
-  display: flex;
+display: flex;
   flex-direction: column;
-  
+  margin-bottom: 20px;
 }
 .name{
   font-size: 12px;
@@ -105,13 +104,17 @@ padding: 24px;
   width: 327px;
   height: 45px;
   font-size: 18px;
- color: #DFDEE0;
  border:solid #DFDEE0 1px;
  border-radius: 8px;
+}
+.input::placeholder{
+  font-size: 18px;
+ color: #DFDEE0;
 }
 .cardNumber{
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 .cardCaducidad{
   display: flex;
@@ -121,25 +124,43 @@ padding: 24px;
   width: 72px;
   height: 45px;
   font-size: 18px;
- color: #DFDEE0;
  border:solid #DFDEE0 1px;
  border-radius: 8px;
+ margin-right: 8px;
+}
+.inputLitle::placeholder{
+  font-size: 18px;
+ color: #DFDEE0;
 }
 .inputsAge{
   display: flex;
+  margin-right: 8px;
 }
 .ageCvc{
   display: flex;
+  margin-bottom: 20px; 
 }
 .inputLitle2{
   width: 164px;
   height: 45px;
   font-size: 18px;
- color: #DFDEE0;
  border:solid #DFDEE0 1px;
  border-radius: 8px;
+}
+.inputLitle2::placeholder{
+  font-size: 18px;
+ color: #DFDEE0;
 }
 .cvcInput{
   display: flex;
   flex-direction: column;
+}
+.buttonConfirmInput{
+  width: 327px;
+  height: 53px;
+  background-color: #21092F;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 18px;
 }

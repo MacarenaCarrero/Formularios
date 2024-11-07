@@ -15,24 +15,28 @@
   <body>
     <div class="container">
       <div class="backCard">
-        <p class="numberCvc">000</p>
+        <p id="numberCvc" class="numberCvc">000</p>
       </div>
       <div class="frontCard">
-        <p class="pan">0000 0000 0000 0000</p>
+        <p id="numeroPan" class="pan">0000 0000 0000 0000</p>
         <div class="nameAge">
-          <p class="nameTitular">JANE APPLESEED</p>
-          <p class="ageCaducity">00/00</p>
+          <p id="nameTitular" class="nameTitular">JANE APPLESEED</p>
+          <div>
+            <span id="monthCaducity" class="ageCaducity">00</span>
+            <span id="yearCaducity" class="ageCaducity">/ 00</span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="form">
+    <form class="form" id="form">
       <div class="cardname">
         <label class="name" for="name">CARDHOLDER NAME</label>
         <input
           class="input"
           type="text"
           id="name"
-          value="e.g. Jane Appleseed"
+          name="nameUser"
+          placeholder="e.g. Jane Appleseed"
         />
       </div>
       <div class="cardNumber">
@@ -41,36 +45,43 @@
           class="input"
           type="number"
           id="number"
+          name="pan"
           placeholder="  e.g. 1234 5678 9123 0000"
         />
       </div>
       <div class="ageCvc">
         <div class="cardCaducidad">
-          <label class="name" for="fecha fecha2">EXP. DATE (MM/YY)</label>
+          <label class="name" for="fecha">EXP. DATE (MM/YY)</label>
           <div class="inputsAge">
             <input
               class="inputLitle"
               type="number"
               id="fecha"
+              name="month"
               placeholder="MM"
             />
             <input
               class="inputLitle"
               type="number"
               id="fecha2"
+              name="year"
               placeholder="YY"
             />
           </div>
         </div>
         <div class="cvcInput">
-          <label class="name" for="cvc2">CVC</label>
-          <input class="inputLitle2" type="number" placeholder="e.g. 123" />
+          <label class="name" for="cvc">CVC</label>
+          <input
+            class="inputLitle2"
+            type="number"
+            id="cvc"
+            name="cvc"
+            placeholder="e.g. 123"
+          />
         </div>
       </div>
-      <div class="buttonConfirm">
-        <input type="submit" value="Confirm" />
-      </div>
-    </div>
-    <script src="./js/scripst.js"></script>
+      <input class="buttonConfirmInput" type="submit" value="Confirm" />
+    </form>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
