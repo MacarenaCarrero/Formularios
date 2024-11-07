@@ -4,6 +4,12 @@ const nameTitularElement = document.getElementById("nameTitular");
 const monthCaducityElement = document.getElementById("monthCaducity");
 const yearCaducityElement = document.getElementById("yearCaducity");
 const numeroPanElement = document.getElementById("numeroPan");
+const name1Element = document.getElementById("name1");
+const numberElement = document.getElementById("number");
+const fechaElement = document.getElementById("fecha");
+const cvcElement = document.getElementById("cvc");
+const fecha2Element = document.getElementById("fecha2");
+const buttonConfirmElement = document.getElementById("buttonConfirm");
 
 const formInfo = (event) => {
   event.preventDefault();
@@ -12,8 +18,34 @@ const formInfo = (event) => {
   const monthValue = formElement.month.value;
   const yearValue = formElement.year.value;
   const cvcValue = formElement.cvc.value;
-};
 
+  if (nameUserValue === "") {
+    name1Element.classList.add("borderRed");
+  } else {
+    name1Element.classList.remove("borderRed");
+  }
+
+  if (panValue === "") {
+    numberElement.classList.add("borderRed");
+  } else {
+    numberElement.classList.remove("borderRed");
+  }
+  if (monthValue === "") {
+    fechaElement.classList.add("borderRed");
+  } else {
+    fechaElement.classList.remove("borderRed");
+  }
+  if (yearValue === "") {
+    fecha2Element.classList.add("borderRed");
+  } else {
+    fecha2Element.classList.remove("borderRed");
+  }
+  if (cvcValue === "") {
+    cvcElement.classList.add("borderRed");
+  } else {
+    cvcElement.classList.remove("borderRed");
+  }
+};
 const printInfo = () => {
   const cvcValue = formElement.cvc.value;
   const nameUserValue = formElement.nameUser.value;
@@ -52,3 +84,4 @@ const printInfo = () => {
 
 formElement.addEventListener("submit", formInfo);
 formElement.addEventListener("input", printInfo);
+buttonConfirmElement.addEventListener("click", formInfo);
